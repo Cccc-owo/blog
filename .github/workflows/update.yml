@@ -5,8 +5,8 @@ name: Update
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
 on:
-  #schedule:
-  #  - cron: '05 1 * * FRI'
+  schedule:
+    - cron: '05 1 * * FRI'
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -32,6 +32,7 @@ jobs:
     - uses: fregante/setup-git-user@v1
     - name: Commit Changes & Push to Remote Branch
       run: |
+        git checkout -b deps
         git add -A
-        git commit -m "chore: update deps"
-        git push -u origin
+        git commit -m "chore(deps): update deps"
+        git push -u origin deps -f
