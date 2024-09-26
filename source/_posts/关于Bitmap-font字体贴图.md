@@ -12,7 +12,7 @@ date: 2022-08-23 15:09:18
 updated: 2024-09-26 15:57:00
 ---
 
->Bitmap font 是 P 社的 Clausewitz 引擎所使用的一种字体格式（当然现在也能用 TTF），这种字体的特点是所有文字都是栅格化的，不同于 ttf 等矢量格式的字体。所有字符绘制在一张或多张像素图片（通常为 dds 或 tga）上，再通过一个定义文件（fnt）来描述每个字符在图片中的位置，引擎就可以以此配置来读取并将字符显示到界面中。
+> Bitmap font 是 P 社的 Clausewitz 引擎所使用的一种字体格式（当然现在也能用 TTF），这种字体的特点是所有文字都是栅格化的，不同于 ttf 等矢量格式的字体。所有字符绘制在一张或多张像素图片（通常为 dds 或 tga）上，再通过一个定义文件（fnt）来描述每个字符在图片中的位置，引擎就可以以此配置来读取并将字符显示到界面中。
 
 <!-- more -->
 
@@ -32,7 +32,7 @@ updated: 2024-09-26 15:57:00
 
 ## 生成地图字体文件
 
-下载[Bitmap font generator](http://www.angelcode.com/products/bmfont/)（后文简称bmfont）
+下载[Bitmap font generator](http://www.angelcode.com/products/bmfont/bmfont64_1.14b_beta.zip)（后文简称bmfont）
 
 首先打开bmfont，先看到左上角菜单栏的两个选项，我们将依次解释。
 
